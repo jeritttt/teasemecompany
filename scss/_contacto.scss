@@ -1,0 +1,33 @@
+
+* {
+  margin: 0;
+  color: white;
+  font-family: "Roboto"
+}
+.player__titulo {
+  font-size: 40%;
+    div {
+        width: 100%;
+        text-align: center;
+    }
+}
+.player__interactuando {
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    &ready {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto
+        }      
+      }
+.player__interactuando {
+    font-size: 50%;
+}
+
+@media (max-width: 700px){
+  .ready {
+    display: grid;
+  }
+}

@@ -1,0 +1,43 @@
+.remerasHdos {
+    text-align: center;
+}
+#stockCloset {
+    text-align: center;
+    font-size: 550%;
+}
+.centrado {
+    position: absolute;
+    top: 450%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(236, 4, 55);
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 330%;
+}
+.centradoDos {
+    position: absolute;
+    top: 650%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    color: rgb(236, 4, 55);
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 330%;
+}
+.centradoTres {
+    position: absolute;
+    top: 850%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    color: rgb(236, 4, 55);
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 330%;
+}
+
+.stockCloset {
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}

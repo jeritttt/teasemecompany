@@ -1,0 +1,85 @@
+.welcome {
+    grid-area: welcome;
+}
+
+.sobreNosotros {
+    grid-area: nosotros;
+    margin-top: 90%;
+    text-align: justify;
+    font-size: 140%;
+}
+
+.footerFinal {
+    grid-area: footer;
+}
+
+.welcome {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-size: 300%;
+    text-align: center;
+    margin: 1px;
+    padding: 1px;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-responsive iframe object embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.welcome {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 300%;
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+}
+
+.contenidoPrincipal {
+    display: flex;
+    justify-content: stretch;
+    align-content: flex-start;
+    align-self: baseline;
+}
+
+.contenidoPrincipal div p {
+    margin: 10px;
+    font-size: 100%;
+}
+.contenidoMultimediaHome {
+    color: black;
+    align-self: baseline;
+    margin: 10px;
+    padding: 2px;
+}
+.videoHome {
+    margin: 4px;
+    padding: 4px;
+    justify-content: space-between;
+
+}
+.contenidoPrincipal {
+    margin-top: 10%;
+    font-size: 250%;
+    font-weight: bolder;
+    text-align: center;
+
+}
+video {
+    width: 100% !important;
+    height: auto !important;
+}

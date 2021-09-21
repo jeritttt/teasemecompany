@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100;1,200;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.welcome {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: welcome;
+}
+
+.sobreNosotros {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: nosotros;
+  margin-top: 90%;
+  text-align: justify;
+  font-size: 140%;
+}
+
+.footerFinal {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+
+.welcome {
+  background-color: transparent;
+  color: black;
+  font-style: italic;
+  font-size: 300%;
+  text-align: center;
+  margin: 1px;
+  padding: 1px;
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-responsive iframe object embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.welcome {
+  background-color: transparent;
+  color: black;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 300%;
+  text-align: center;
+  margin: 2%;
+  padding: 2%;
+}
+
+.contenidoPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.contenidoPrincipal div p {
+  margin: 10px;
+  font-size: 100%;
+}
+
+.contenidoMultimediaHome {
+  color: black;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  margin: 10px;
+  padding: 2px;
+}
+
+.videoHome {
+  margin: 4px;
+  padding: 4px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contenidoPrincipal {
+  margin-top: 10%;
+  font-size: 250%;
+  font-weight: bolder;
+  text-align: center;
+}
+
+video {
+  width: 100% !important;
+  height: auto !important;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background: #ECE9E6;
+  background: -webkit-gradient(linear, right top, left top, from(#FFFFFF), to(#ECE9E6));
+  background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+}
+
+.headerInicial {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+header {
+  background-image: url(../imagenes/logoplastic.jpg);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 90%;
+  font-size: 300%;
+  font-weight: normal;
+  height: 120vh;
+  text-align: center;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr 1fr;
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas: "header  header  header" "welcome welcome nosotros" "welcome welcome nosotros" "footer  footer  footer";
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.mapaRedes {
+  padding: 10px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  font-size: 40%;
+  color: gray;
+  background-color: white;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  font-size: 340%;
+  border: black 2px solid;
+}
+
+.logoBoca {
+  border: black 1px solid;
+  width: 15rem;
+}
+
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: black 1px solid;
+}
+
+small {
+  font-size: 90%;
+}
+
+.texto-encima {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.tablaDeTalles {
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
+  font-size: 200%;
+}
+
+.formularioContacto {
+  font-size: 375%;
+  font-weight: bold;
+  text-align: left;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  text-anchor: middle;
+  letter-spacing: 3px;
+}
+
+#submit {
+  text-align: center;
+}
+
+.carroDeCompras ul li {
+  font-size: 900%;
+}
+
+.zoom {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.navegacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 79px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 90%;
+  color: gray;
+}
+
+.navegacion li > a:hover {
+  color: black;
+  background-color: transparent;
+  float: right;
+  text-align: center;
+}
+
+.navegacion li a {
+  position: fixed;
+  justify-items: right;
+  color: #8a8a8a;
+  -webkit-transition: 7s;
+  transition: 7s;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navegacion li a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.navegacion li a .navegacion li img {
+  position: fixed;
+  padding: -2px;
+  margin: 20px;
+  width: 100%;
+  height: 8px;
+  -webkit-transition: 7s;
+  transition: 7s;
+}
+
+.navegacion li a .navegacion li img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.navbar {
+  position: fixed;
+  opacity: 40%;
+}
+
+.navbar li a {
+  -webkit-transition: 7s;
+  transition: 7s;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.navbar li > a:hover {
+  color: black;
+  background-color: transparent;
+  float: left;
+  text-align: center;
+}
+
+.remerasHdos {
+  text-align: center;
+}
+
+#stockCloset {
+  text-align: center;
+  font-size: 550%;
+}
+
+.centrado {
+  position: absolute;
+  top: 450%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ec0437;
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-size: 330%;
+}
+
+.centradoDos {
+  position: absolute;
+  top: 650%;
+  left: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ec0437;
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-size: 330%;
+}
+
+.centradoTres {
+  position: absolute;
+  top: 850%;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ec0437;
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-size: 330%;
+}
+
+.stockCloset {
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+}
+
+@media screen and (max-whidt: 970px) {
+  .sobreNosotros {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+    margin-top: 200%;
+    margin-right: 30%;
+    margin-left: 60%;
+    font-size: 100%;
+  }
+  .videoHome {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: welcome;
+    margin: 1px;
+    padding: 1px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footerFinal {
+    height: auto;
+    width: auto;
+  }
+}
+
+.bienvenidosFooter {
+  font-size: 20px;
+  margin: 20px;
+}
+
+@media screen and (max-whidt: 770px) {
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 6fr 6fr;
+        grid-template-columns: 6fr 6fr;
+        grid-template-areas: "header  header " "welcome nosotros" "welcome nosotros" "footer  footer";
+  }
+  .videoHome {
+    margin: 0;
+    padding: 0;
+  }
+  .sobreNosotros {
+    grid-area: auto;
+    margin-top: 500%;
+    margin-right: 130%;
+    margin-left: 60%;
+    font-size: 60%;
+    width: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */

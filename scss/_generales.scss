@@ -1,0 +1,119 @@
+
+html {
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+    background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+}
+
+.headerInicial {
+    grid-area: header;
+}
+
+header {
+    background-image: url(../imagenes/logoplastic.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    font-size: 300%;
+    font-weight: normal;
+    height: 120vh;
+    text-align: center;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        "header  header  header"
+        "welcome welcome nosotros"
+        "welcome welcome nosotros"
+        "footer  footer  footer"
+}
+
+
+
+
+
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.mapaRedes {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    font-size: 40%;
+    color: gray;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 340%;
+    border: black 2px solid;
+}
+
+.logoBoca {
+    border: black 1px solid;
+    width: 15rem;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: black 1px solid;
+}
+
+small {
+    font-size: 90%;
+
+}
+
+.texto-encima {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.tablaDeTalles {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-color: black;
+    font-size: 200%;
+}
+
+.formularioContacto {
+    font-size: 375%;
+    font-weight: bold;
+    text-align: left;
+    text-decoration-style: wavy;
+    text-anchor: middle;
+    letter-spacing: 3px;
+}
+
+#submit {
+    text-align: center;
+}
+
+.carroDeCompras ul li {
+    font-size: 900%;
+}

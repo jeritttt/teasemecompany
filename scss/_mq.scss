@@ -1,0 +1,51 @@
+@media screen and (max-whidt:970px) {
+
+    .sobreNosotros {
+        grid-area: footer;
+        margin-top: 200%;
+        margin-right: 30%;
+        margin-left: 60%;
+        font-size: 100%;
+    }
+
+    .videoHome {
+        grid-area: welcome;
+        margin: 1px;
+        padding: 1px;
+        justify-content: space-around;
+    }
+
+    .footerFinal {
+        height: auto;
+        width: auto;
+    }
+}
+.bienvenidosFooter {
+    font-size: 20px;
+    margin: 20px;
+}
+@media screen and (max-whidt: 770px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-template-areas:
+            "header  header "
+            "welcome nosotros"
+            "welcome nosotros"
+            "footer  footer"
+    }
+
+    .videoHome {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sobreNosotros {
+        grid-area: auto;
+        margin-top: 500%;
+        margin-right: 130%;
+        margin-left: 60%;
+        font-size: 60%;
+        width: auto;
+    }
+}

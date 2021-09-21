@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@import "fuentes";
+@import "home";
+@import "generales";
+@import "variables";
+.zoom {
+    transition: all .5s;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    flex-wrap: nowrap;
+    height: 79px;
+    align-items: center;
+    font-size: 90%;
+    color: gray;
+}
+
+.navegacion li>a:hover {
+    color: black;
+    background-color: transparent;
+    float: right;
+    text-align: center
+}
+
+.navegacion li a {
+    position: fixed;
+    justify-items: right;
+    color: rgb(138, 138, 138);
+    transition: 7s;
+    list-style: none;
+    text-decoration: none;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+
+    .navegacion li img {
+        position: fixed;
+        padding: -2px;
+        margin: 20px;
+        width: 100%;
+        height: 8px;
+        transition: 7s;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+}
+
+.navbar {
+    position: fixed;
+    opacity: 40%;
+
+    & li a {
+        transition: 7s;
+        list-style: none;
+        text-decoration: none;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+}
+
+.navbar li>a:hover {
+    color: black;
+    background-color: transparent;
+    float: left;
+    text-align: center
+}
+
+@import "closet";
+@import "mq";
