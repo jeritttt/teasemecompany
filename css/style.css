@@ -250,6 +250,113 @@ small {
   font-size: 900%;
 }
 
+.tabla__talles--medidas 1 {
+  background-color: black;
+}
+
+.tabla__talles--medidas 2 {
+  background-color: black;
+}
+
+.tabla__talles--medidas 3 {
+  background-color: black;
+}
+
+.whatsapp-icon {
+  background-color: gray;
+}
+
+.instagram-icon {
+  background-color: gray;
+}
+
+.twitter-icon {
+  background-color: gray;
+}
+
+.gmail-icon {
+  background-color: gray;
+}
+
+.tabla__talles--letras {
+  list-style: none;
+  color: gray;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid rgba(255, 0, 0, 0.829);
+}
+
+.tabla__talles--medidas td {
+  list-style: none;
+  color: gray;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid rgba(255, 0, 0, 0.829);
+}
+
+.tablilla {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15%;
+  text-decoration: overline;
+  font-size: 160%;
+}
+
+.remerasHdos {
+  text-align: center;
+}
+
+#stockCloset {
+  text-align: center;
+  font-size: 550%;
+}
+
+.centrado {
+  position: absolute;
+  top: 450%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ec0437;
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-size: 330%;
+}
+
+.centradoDos {
+  position: absolute;
+  top: 650%;
+  left: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ec0437;
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-size: 330%;
+}
+
+.centradoTres {
+  position: absolute;
+  top: 850%;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ec0437;
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-size: 330%;
+}
+
+.stockCloset {
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+}
+
 .zoom {
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -339,57 +446,6 @@ small {
   text-align: center;
 }
 
-.remerasHdos {
-  text-align: center;
-}
-
-#stockCloset {
-  text-align: center;
-  font-size: 550%;
-}
-
-.centrado {
-  position: absolute;
-  top: 450%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #ec0437;
-  font-variant: small-caps;
-  font-weight: lighter;
-  font-size: 330%;
-}
-
-.centradoDos {
-  position: absolute;
-  top: 650%;
-  left: 90%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #ec0437;
-  font-variant: small-caps;
-  font-weight: lighter;
-  font-size: 330%;
-}
-
-.centradoTres {
-  position: absolute;
-  top: 850%;
-  left: 100%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #ec0437;
-  font-variant: small-caps;
-  font-weight: lighter;
-  font-size: 330%;
-}
-
-.stockCloset {
-  text-decoration: none;
-  list-style: none;
-  list-style-type: none;
-}
-
 @media screen and (max-whidt: 970px) {
   .sobreNosotros {
     -ms-grid-row: 4;
@@ -443,5 +499,66 @@ small {
     font-size: 60%;
     width: auto;
   }
+}
+
+.back404 {
+  background-color: white;
+}
+
+.header_error {
+  background-image: none;
+}
+
+.footer_error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 90rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: auto;
+}
+
+.se_rompio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 25%;
+  max-height: 25%;
+}
+
+.boton_redireccion {
+  text-decoration: none;
+  padding: 20px;
+  font-weight: 50%;
+  font-size: 40px;
+  color: #ffffff;
+  background-color: #080808;
+  border-radius: 20%;
+  border: 2px solid #ffffff;
+  height: 50%;
+  margin-top: 40%;
+}
+
+.primer_linea {
+  text-decoration: none;
+  padding: 20px;
+  font-weight: 50%;
+  font-size: 40px;
+  margin-top: 30%;
+}
+
+.principal_error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

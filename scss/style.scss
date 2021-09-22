@@ -9,6 +9,8 @@
 @import "home";
 @import "generales";
 @import "variables";
+@import "oursizes";
+@import "closet";
 .zoom {
     transition: all .5s;
 
@@ -83,6 +85,5 @@
     float: left;
     text-align: center
 }
-
-@import "closet";
 @import "mq";
+@import "404"

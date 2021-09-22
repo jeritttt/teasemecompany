@@ -1,0 +1,45 @@
+.back404 {
+    background-color: white;
+}
+.header_error {
+    background-image: none;
+}
+.footer_error {
+    display: flex;
+    max-width: 90rem;
+    justify-content: center;
+    margin: auto;
+    padding: auto
+    ;
+}
+.se_rompio {
+    display: flex;
+    justify-content: center;
+    max-width: 25%;
+    max-height: 25%
+    ;
+}
+.boton_redireccion{
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 50%;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: #080808;
+    border-radius: 20%;
+    border: 2px solid #ffffff;
+    height: 50%;
+    margin-top: 40%;
+
+  }
+.primer_linea {
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 50%;
+    font-size: 40px;
+    margin-top: 30%;
+}
+.principal_error {
+    display: flex;
+    justify-content: space-between;
+}

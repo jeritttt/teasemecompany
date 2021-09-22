@@ -1,5 +1,19 @@
 $paleta_1: rgba(255, 0, 0, 0.829);
 $paleta_2: white;
-$paleta_3: gray
+$paleta_3: gray;
+$sobresale_1: #faba0b;
 
-
+@mixin texto_favorito {
+    color: $paleta_3;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid $paleta_1;
+  }
+@for $i from 1 through 3 {
+    .tabla__talles--medidas #{$i} { background-color: black * $i; }
+  }
+@each $redes in whatsapp, instagram, twitter, gmail {
+    .#{$redes}-icon {
+      background-color: $paleta_3;
+    }
+  }

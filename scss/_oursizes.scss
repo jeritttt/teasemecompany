@@ -1,0 +1,17 @@
+.tabla__talles--letras {
+    list-style: none;
+    @include texto_favorito
+}
+.tabla__talles--medidas {
+    td {
+    list-style: none;
+    @include texto_favorito
+ }
+}
+.tablilla {
+    align-items: center;
+    justify-content: center;
+    margin: 15%;
+    text-decoration: overline;
+    font-size: 160%;
+}
