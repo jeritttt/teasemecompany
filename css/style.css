@@ -154,6 +154,12 @@ header {
       grid-template-areas: "header  header  header" "welcome welcome nosotros" "welcome welcome nosotros" "footer  footer  footer";
 }
 
+.galeria_arte {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
 .contenedor {
   position: relative;
   display: inline-block;
