@@ -154,12 +154,6 @@ header {
       grid-template-areas: "header  header  header" "welcome welcome nosotros" "welcome welcome nosotros" "footer  footer  footer";
 }
 
-.galeria_arte {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
 .contenedor {
   position: relative;
   display: inline-block;
@@ -361,6 +355,68 @@ small {
   text-decoration: none;
   list-style: none;
   list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.player__titulo {
+  font-size: 40%;
+}
+
+.player__titulo div {
+  width: 100%;
+  text-align: center;
+}
+
+.contact__interactivo {
+  background-color: transparent;
+  color: black;
+  -webkit-text-emphasis-color: black;
+          text-emphasis-color: black;
+}
+
+.player__interactuando {
+  background-color: transparent;
+  background-image: linear-gradient(135deg, #ffffff98 0%, #f76f6f 175%);
+}
+
+.player__interactuandoready {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.player__interactuando {
+  font-size: 160%;
+}
+
+.titulo__contacto {
+  font-size: 200%;
+  color: #d60909;
+  text-align: center;
+}
+
+.formulario__contacto {
+  font-size: 170%;
+}
+
+@media (max-width: 700px) {
+  .ready {
+    display: -ms-grid;
+    display: grid;
+  }
+  .contact__interactivo {
+    font-size: 50%;
+  }
 }
 
 .zoom {
