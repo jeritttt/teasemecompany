@@ -23,6 +23,7 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://kit.fontawesome.com/dede80f460.js" crossorigin="anonymous"></script>
+  <script src="/js/compras.js"></script>
   <title>CART - TEASE ME COMPANY</title>
 
 </head>
@@ -78,7 +79,47 @@
       <li>Custom denim</li>
       <li>Accesorios</li>
     </ul>
+   
+        <h1>GO CART;</h1>
+        <table id="mytable" width="1200" align="center">
+          <tr>
+            <th><input type="checkbox" id="allCheck" onclick="selectAll()" />seleccionar todo</th>
+            <th>TEASEMEPLEASE</th>
+            <th>Puntos acumulados con esta compra</th>
+            <th>Precio unitario (peso$)</th>
+            <th>Cantidad</th>
+            <th>Subtotal (peso$)</th>
+            <th>Editar</th>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="selectOne" /></td>
+            <td class="imgbackground"><img src="/imagenes/tigre.jpg" width="40%" /></td>
+            <td class="integral">247</td>
+            <td>3500.00</td>
+            <td>
+              <button onclick="reduce(this)">-</button>
+              <input type="text" size="1" readonly="true" value="1" />
+              <button onclick="plus(this)">+</button>
+            </td>
+            <td class="shopCount">0</td>
+            <td><a href="#" class="delete" onclick="deleteChild(this)">Eliminar</a></td>
+          </tr>
 
+        </table>
+      </div>
+      <div id="info-input">
+        <div class="total-div">
+          <span>Precio total (sin envio):<span id="resultTotalMoney">0</span>pesos argentinos</span>
+        </div>
+        <div class="btorinter-div">
+          <button onclick="selectDelete()" class="btdelete">Eliminar seleccionado</button>
+          <span class="viewIntegral">Puntos a ganar:<span id="integralTotal">0</span>puntos</span>
+        </div>
+        <div>
+          <button class="btbuy" onclick="buyNow()">Ir a pagar</button>
+        </div>
+      </div>
+    </div>
 
   </section>
   <!-- Pie de pagina / footer -->
@@ -99,9 +140,9 @@
         <a href="/index.html"> <img src="/imagenes/logoboca.jpg" class="logoBoca" alt="logotipo boca" width="90%"></a>
         <div class="btn-group-vertical redes ">
           <a class="btn btn-primary" href="/index.html" role="button">HOME</a>
-          <a class="btn btn-primary" href="https://www.instagram.com/teaseme.company/" target=”_blank”  role="button">@TEASEMECOMPANY <i
-              class="fab fa-instagram"></i></a>
-          <a class="btn btn-primary" href="https://web.whatsapp.com/" target=”_blank”  role="button">WHATS APP? <i
+          <a class="btn btn-primary" href="https://www.instagram.com/teaseme.company/" target=”_blank”
+            role="button">@TEASEMECOMPANY <i class="fab fa-instagram"></i></a>
+          <a class="btn btn-primary" href="https://web.whatsapp.com/" target=”_blank” role="button">WHATS APP? <i
               class="fab fa-whatsapp"></i></a>
           <a class="btn btn-primary" href="/paginas/cart.html" role="button">GO CART <i
               class="fab fa-shopping-cart"></i></a>
