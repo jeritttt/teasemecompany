@@ -14,8 +14,8 @@ body {
     grid-area: header;
 }
 
-header {
-    background-image: url(../imagenes/logoplastic.jpg);
+.header__index {
+    background-image: url(../imagenes/secciones/logoplastic.webp);
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -27,15 +27,77 @@ header {
     text-align: center;
 
 }
+.header__artgallery {
+    background-image: url(../imagenes/secciones/artgallery.webp);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    font-size: 300%;
+    font-weight: normal;
+    height: 120vh;
+    text-align: center;
 
+}
+.header__cart {
+    background-image: url(../imagenes/secciones/cart.webp);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    font-size: 300%;
+    font-weight: normal;
+    height: 120vh;
+    text-align: center;
+
+}
+.header__closet {
+    background-image: url(../imagenes/secciones/closet.webp);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    font-size: 300%;
+    font-weight: normal;
+    height: 120vh;
+    text-align: center;
+
+}
+.header__contact {
+    background-image: url(../imagenes/secciones/contact.webp);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    font-size: 300%;
+    font-weight: normal;
+    height: 120vh;
+    text-align: center;
+
+}
+.header__oursizes {
+    background-image: url(../imagenes/secciones/oursizes.webp);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    font-size: 300%;
+    font-weight: normal;
+    height: 150vh;
+    text-align: center;
+
+}
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas:
-        "header  header  header"
-        "welcome welcome nosotros"
-        "welcome welcome nosotros"
-        "footer  footer  footer"
+   grid-template-areas:
+   "header  header  header"
+    "welcome welcome nosotros"
+    "welcome welcome nosotros"
+    "footer  footer  footer"
 }
 
 
@@ -61,12 +123,23 @@ header {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
     text-align: center;
-    font-size: 340%;
+    font-size: 220%;
     border: black 2px solid;
+    width: 100%;
+    max-width: 100%;
+    padding: 10%;
+    margin: auto;
+    height:90%;
+}
+.bienvenidos__footer {
+    text-align: center;
 }
 
+.sobre__nosotros { 
+    font-size: 100%;
+}
 .logoBoca {
     border: black 1px solid;
     width: 15rem;
@@ -77,7 +150,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: black 1px solid;
+    width: 100%;
 }
 
 small {

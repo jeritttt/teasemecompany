@@ -133,8 +133,8 @@ body {
   grid-area: header;
 }
 
-header {
-  background-image: url(../imagenes/logoplastic.jpg);
+.header__index {
+  background-image: url(../imagenes/secciones/logoplastic.webp);
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -146,11 +146,72 @@ header {
   text-align: center;
 }
 
+.header__artgallery {
+  background-image: url(../imagenes/secciones/artgallery.webp);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 90%;
+  font-size: 300%;
+  font-weight: normal;
+  height: 120vh;
+  text-align: center;
+}
+
+.header__cart {
+  background-image: url(../imagenes/secciones/cart.webp);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 90%;
+  font-size: 300%;
+  font-weight: normal;
+  height: 120vh;
+  text-align: center;
+}
+
+.header__closet {
+  background-image: url(../imagenes/secciones/closet.webp);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 90%;
+  font-size: 300%;
+  font-weight: normal;
+  height: 120vh;
+  text-align: center;
+}
+
+.header__contact {
+  background-image: url(../imagenes/secciones/contact.webp);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 90%;
+  font-size: 300%;
+  font-weight: normal;
+  height: 120vh;
+  text-align: center;
+}
+
+.header__oursizes {
+  background-image: url(../imagenes/secciones/oursizes.webp);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 90%;
+  font-size: 300%;
+  font-weight: normal;
+  height: 150vh;
+  text-align: center;
+}
+
 .wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 4fr 1fr;
-      grid-template-columns: 1fr 4fr 1fr;
       grid-template-areas: "header  header  header" "welcome welcome nosotros" "welcome welcome nosotros" "footer  footer  footer";
 }
 
@@ -184,12 +245,25 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  font-size: 340%;
+  font-size: 220%;
   border: black 2px solid;
+  width: 100%;
+  max-width: 100%;
+  padding: 10%;
+  margin: auto;
+  height: 90%;
+}
+
+.bienvenidos__footer {
+  text-align: center;
+}
+
+.sobre__nosotros {
+  font-size: 100%;
 }
 
 .logoBoca {
@@ -211,7 +285,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: black 1px solid;
+  width: 100%;
 }
 
 small {
@@ -248,6 +322,61 @@ small {
 
 .carroDeCompras ul li {
   font-size: 900%;
+}
+
+@media screen and (max-whidt: 970px) {
+  .sobre__nosotros {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+    margin-top: 200%;
+    margin-right: 30%;
+    margin-left: 60%;
+    font-size: 100%;
+  }
+  .videoHome {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: welcome;
+    margin: 1px;
+    padding: 1px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footerFinal {
+    height: auto;
+    width: auto;
+  }
+}
+
+.bienvenidosFooter {
+  font-size: 20px;
+  margin: 20px;
+}
+
+@media screen and (max-whidt: 770px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .videoHome {
+    margin: 0;
+    padding: 0;
+  }
+  .texto__principal {
+    text-align: center;
+  }
+  .sobre__nosotros {
+    margin: 5%;
+    font-size: 30%;
+    width: auto;
+    font-size: 10%;
+    position: center;
+  }
 }
 
 .tabla__talles--medidas 1 {
@@ -464,61 +593,6 @@ a {
 .closetVentas {
   margin: 0;
   padding: 0;
-}
-
-@media screen and (max-whidt: 970px) {
-  .sobreNosotros {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: footer;
-    margin-top: 200%;
-    margin-right: 30%;
-    margin-left: 60%;
-    font-size: 100%;
-  }
-  .videoHome {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: welcome;
-    margin: 1px;
-    padding: 1px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .footerFinal {
-    height: auto;
-    width: auto;
-  }
-}
-
-.bienvenidosFooter {
-  font-size: 20px;
-  margin: 20px;
-}
-
-@media screen and (max-whidt: 770px) {
-  .wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 6fr 6fr;
-        grid-template-columns: 6fr 6fr;
-        grid-template-areas: "header  header " "welcome nosotros" "welcome nosotros" "footer  footer";
-  }
-  .videoHome {
-    margin: 0;
-    padding: 0;
-  }
-  .sobreNosotros {
-    grid-area: auto;
-    margin-top: 500%;
-    margin-right: 130%;
-    margin-left: 60%;
-    font-size: 60%;
-    width: auto;
-  }
 }
 
 .zoom {

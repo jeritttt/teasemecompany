@@ -1,6 +1,6 @@
 @media screen and (max-whidt:970px) {
 
-    .sobreNosotros {
+    .sobre__nosotros {
         grid-area: footer;
         margin-top: 200%;
         margin-right: 30%;
@@ -26,26 +26,23 @@
 }
 @media screen and (max-whidt: 770px) {
     .wrapper {
-        display: grid;
-        grid-template-columns: 6fr 6fr;
-        grid-template-areas:
-            "header  header "
-            "welcome nosotros"
-            "welcome nosotros"
-            "footer  footer"
+        display:flex;
+   
     }
 
     .videoHome {
         margin: 0;
         padding: 0;
     }
-
-    .sobreNosotros {
-        grid-area: auto;
-        margin-top: 500%;
-        margin-right: 130%;
-        margin-left: 60%;
-        font-size: 60%;
+    .texto__principal{
+        text-align: center;
+    }
+    .sobre__nosotros {
+            margin: 5%;
+        font-size: 30%;
         width: auto;
+        font-size: 10%;
+        position: center;
+   
     }
 }
