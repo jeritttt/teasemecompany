@@ -1,4 +1,3 @@
-
 html {
     font-size: 62.5%;
     font-family: 'Josefin Sans', sans-serif;
@@ -14,19 +13,25 @@ body {
     grid-area: header;
 }
 
-.header__index {
-    background-image: url(../imagenes/secciones/logoplastic.webp);
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 90%;
-    font-size: 300%;
-    font-weight: normal;
-    height: 120vh;
-    text-align: center;
-
+.logo__boca {   
+    
+    &:hover {
+    transition: 1.5s;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    }
 }
+.header__index {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 100%;
+    font-size: 250%;
+    font-weight: normal;
+    height: 110vh;
+    text-align: center;
+}
+
 .header__artgallery {
     background-image: url(../imagenes/secciones/artgallery.webp);
     width: 100%;
@@ -40,6 +45,7 @@ body {
     text-align: center;
 
 }
+
 .header__cart {
     background-image: url(../imagenes/secciones/cart.webp);
     width: 100%;
@@ -53,6 +59,7 @@ body {
     text-align: center;
 
 }
+
 .header__closet {
     background-image: url(../imagenes/secciones/closet.webp);
     width: 100%;
@@ -66,6 +73,7 @@ body {
     text-align: center;
 
 }
+
 .header__contact {
     background-image: url(../imagenes/secciones/contact.webp);
     width: 100%;
@@ -79,6 +87,7 @@ body {
     text-align: center;
 
 }
+
 .header__oursizes {
     background-image: url(../imagenes/secciones/oursizes.webp);
     width: 100%;
@@ -92,12 +101,13 @@ body {
     text-align: center;
 
 }
+
 .wrapper {
-   grid-template-areas:
-   "header  header  header"
-    "welcome welcome nosotros"
-    "welcome welcome nosotros"
-    "footer  footer  footer"
+    grid-template-areas:
+        "header  header  header"
+        "welcome welcome nosotros"
+        "welcome welcome nosotros"
+        "footer  footer  footer"
 }
 
 
@@ -123,7 +133,7 @@ body {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     text-align: center;
     font-size: 220%;
     border: black 2px solid;
@@ -131,15 +141,17 @@ footer {
     max-width: 100%;
     padding: 10%;
     margin: auto;
-    height:90%;
+    height: 90%;
 }
+
 .bienvenidos__footer {
     text-align: center;
 }
 
-.sobre__nosotros { 
+.sobre__nosotros {
     font-size: 100%;
 }
+
 .logoBoca {
     border: black 1px solid;
     width: 15rem;

@@ -24,25 +24,38 @@
     font-size: 20px;
     margin: 20px;
 }
-@media screen and (max-whidt: 770px) {
+@media (max-width: 770px){
     .wrapper {
-        display:flex;
-   
-    }
+        grid-template-areas:
+        "header  header"
+         "welcome welcome"
+         "welcome welcome"
+         "footer  footer"
+     }
 
     .videoHome {
         margin: 0;
         padding: 0;
     }
-    .texto__principal{
+    .texto__principal {
+        text-align:justify;
+        font-size: 1.5rem;
+        margin: 2%;
+    }
+    .animate__arte {
         text-align: center;
+        font-size: 2rem;
+        text-decoration: solid ;
     }
     .sobre__nosotros {
-            margin: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
         font-size: 30%;
         width: auto;
         font-size: 10%;
         position: center;
-   
+    }
+    .redes {
+        font-size: 300%;
     }
 }

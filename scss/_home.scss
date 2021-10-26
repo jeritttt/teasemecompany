@@ -1,7 +1,11 @@
 .welcome {
     grid-area: welcome;
 }
-
+.body__index {
+    background-image: url(../imagenes/secciones/plasticobonito.jpg);
+    background-size:repeat;
+    opacity: 100%;
+}
 .sobreNosotros {
     grid-area: nosotros;
     margin-top: 90%;

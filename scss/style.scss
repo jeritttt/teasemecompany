@@ -28,14 +28,14 @@
     text-decoration: none;
     list-style: none;
     flex-wrap: nowrap;
-    height: 79px;
+    height: 50%;
     align-items: center;
     font-size: 90%;
-    color: gray;
+    color: #cf324b;
 }
 
 .navegacion li>a:hover {
-    color: black;
+    color: #cf324b;
     background-color: transparent;
     float: right;
     text-align: center
@@ -44,7 +44,7 @@
 .navegacion li a {
     position: fixed;
     justify-items: right;
-    color: rgb(138, 138, 138);
+    color: #cf324b;
     transition: 7s;
     list-style: none;
     text-decoration: none;
@@ -69,7 +69,7 @@
 
 .navbar {
     position: fixed;
-    opacity: 40%;
+    opacity: 90%;
 
     & li a {
         transition: 7s;

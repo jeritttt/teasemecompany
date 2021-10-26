@@ -7,12 +7,34 @@
           box-sizing: border-box;
 }
 
+.texto__principal {
+  font-size: 100%;
+  color: white;
+}
+
+.animate__arte {
+  color: #fafafa;
+  text-shadow: #535353 0 0 10px, #ffffff 5px 5px 5px;
+  -webkit-filter: glow(color=#1a1818, strength=3);
+          filter: glow(color=#1a1818, strength=3);
+}
+
+.botones__redes {
+  color: gray;
+}
+
 .welcome {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: welcome;
+}
+
+.body__index {
+  background-image: url(../imagenes/secciones/plasticobonito.jpg);
+  background-size: repeat;
+  opacity: 100%;
 }
 
 .sobreNosotros {
@@ -133,16 +155,21 @@ body {
   grid-area: header;
 }
 
+.logo__boca:hover {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
 .header__index {
-  background-image: url(../imagenes/secciones/logoplastic.webp);
-  width: 100%;
-  background-position: center;
-  background-size: cover;
+  background-position: center center;
+  background-size: contain;
   background-repeat: no-repeat;
-  opacity: 90%;
-  font-size: 300%;
+  opacity: 100%;
+  font-size: 250%;
   font-weight: normal;
-  height: 120vh;
+  height: 110vh;
   text-align: center;
 }
 
@@ -357,25 +384,35 @@ small {
   margin: 20px;
 }
 
-@media screen and (max-whidt: 770px) {
+@media (max-width: 770px) {
   .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+        grid-template-areas: "header  header" "welcome welcome" "welcome welcome" "footer  footer";
   }
   .videoHome {
     margin: 0;
     padding: 0;
   }
   .texto__principal {
+    text-align: justify;
+    font-size: 1.5rem;
+    margin: 2%;
+  }
+  .animate__arte {
     text-align: center;
+    font-size: 2rem;
+    -webkit-text-decoration: solid;
+            text-decoration: solid;
   }
   .sobre__nosotros {
-    margin: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     font-size: 30%;
     width: auto;
     font-size: 10%;
     position: center;
+  }
+  .redes {
+    font-size: 300%;
   }
 }
 
@@ -615,16 +652,16 @@ a {
   list-style: none;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  height: 79px;
+  height: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 90%;
-  color: gray;
+  color: #cf324b;
 }
 
 .navegacion li > a:hover {
-  color: black;
+  color: #cf324b;
   background-color: transparent;
   float: right;
   text-align: center;
@@ -633,7 +670,7 @@ a {
 .navegacion li a {
   position: fixed;
   justify-items: right;
-  color: #8a8a8a;
+  color: #cf324b;
   -webkit-transition: 7s;
   transition: 7s;
   list-style: none;
@@ -662,7 +699,7 @@ a {
 
 .navbar {
   position: fixed;
-  opacity: 40%;
+  opacity: 90%;
 }
 
 .navbar li a {
