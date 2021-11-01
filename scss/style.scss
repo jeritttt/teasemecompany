@@ -51,37 +51,25 @@
     text-align: center
 }
 
-&:hover {
-    transform: scale(1.5);
-}
 
 .navegacion li img {
     position: fixed;
-    padding: -2px;
     margin: 20px;
     width: 100%;
     height: 8px;
     transition: 7s;
     text-align: center;
-
-    &:hover {
-        transform: scale(1.5);
-    }
 }
 
 .navbar {
     position: fixed;
     opacity: 90%;
-    text-align: center 
-        &   li<a {
-        transition: 7s;
-        list-style: none;
-        text-decoration: none;
-        }         
-        &:hover {
-                transform: scale(1.5);
-            }
-    }
+    text-align: center;
+    transition: 7s;
+    list-style: none;
+    text-decoration: none;
+}
+
 
 .navbar li>a:hover {
     color: black;

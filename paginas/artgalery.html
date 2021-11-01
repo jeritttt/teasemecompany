@@ -8,27 +8,32 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/imagenes/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/imagenes/favicon/favicon-16x16.png">
   <link rel="manifest" href="/imagenes/favicon/site.webmanifest">
-  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="http://teasemecompany.online/" />
   <meta property="og:title" content="BIENVENIDOS - TEASE ME COMPANY" />
-  <meta property="og:description" content="Vestí arte, moda y a tu estilo. Tienda online de ropa personalizada -. Custom denim, prendas unicas y hechas a mano. Nuestros diseños se basan en la cultura del arte, moda, street y tattoo.Comprá online y recibí en tu casa." />
-  <meta property="og:image" content="https://teasemecompany.tumblr.com/post/663890666869424128/female-energy-the-next-party" />
+  <meta property="og:description"
+    content="Vestí arte, moda y a tu estilo. Tienda online de ropa personalizada -. Custom denim, prendas unicas y hechas a mano. Nuestros diseños se basan en la cultura del arte, moda, street y tattoo.Comprá online y recibí en tu casa." />
+  <meta property="og:image"
+    content="https://teasemecompany.tumblr.com/post/663890666869424128/female-energy-the-next-party" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Galeria de moda, galeria de arte basada en lo hecho a mano, en el tattoo y la street.">
-  <meta name="keywords" content="galeria de fotos, modelos, arte en prendas, moda, street, tattoo, handmade, diseños personalizados, custom denim, ropa, urban, camperas, diseños unicos,ropa pintada a mano, hoodies, arte, remeras, pintado a mano, camperas, urban streetwear">
+  <meta name="description"
+    content="Galeria de moda, galeria de arte basada en lo hecho a mano, en el tattoo y la street.">
+  <meta name="keywords"
+    content="galeria de fotos, modelos, arte en prendas, moda, street, tattoo, handmade, diseños personalizados, custom denim, ropa, urban, camperas, diseños unicos,ropa pintada a mano, hoodies, arte, remeras, pintado a mano, camperas, urban streetwear">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/dede80f460.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://kit.fontawesome.com/dede80f460.js" crossorigin="anonymous"></script>
   <title> ART GALLERY - TEASE ME COMPANY</title>
 
 </head>
 
-<body class="container-fluid">
-  <div class="wrapperGA">
-    <!-- Header / menu nav y logo inicial -->
-    <header class="header__artgallery">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark menuNav container-fluid menuCelu">
+<body style="overflow-x:hidden; overflow-y:scroll" class="container-fluid body__index">
+  <div class="wrapper">
+    <header class="headerInicial header__index">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark menuNav navbar-expand-sm container-fluid menuCelu">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,13 +42,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="../TEASEMECOMPANY/index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/paginas/closet.html">Closet</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../paginas/artgalery.html">Art gallery</a>
+                <a class="nav-link" href="/paginas/artgalery.html">Art gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/paginas/oursizes.html">Our sizes</a>
@@ -58,32 +63,42 @@
           </div>
         </div>
       </nav>
+      <div class="marquee__cont texto__welcome marquee-desktop marquee__cont marquee__cont2 marquee-mobile">
+        <div class="marquee-parent ">
+          <div class="marquee texto__welcome marquee--long" width="100vw" style="--tw: 175ch;   --ad: 12s;">
+            <span><b>-ART GALLERY- GALERIA DE ARTE-</b>/ DESLIZÁ HACIA ABAJO PARA VER LO NUEVO<b> -TEASE ME
+                CREW- </b><b>-GALERIA DE ARTE - </b> /LOVE YOU <b> - PRODUCCIÓN ARTISTICA /HANDMADE- </b> / GRACIAS POR
+              VISITARNOS</span>
+          </div>
+        </div>
+        <img src="/imagenes/logobocatm.png" alt="logotipo boca" width="60%" class="logo__boca">
+      </div>
     </header>
 
-    <h1>ART GALLERY</h1>
+    <h1 class="animate__arte">ART GALLERY</h1>
 
 
-    <h2>EP:1 "greetings from hell"</h2>
+    <h2 class="animate__arte">EP:1 "greetings from hell"</h2>
     <!-- Gallery art -->
     <div class="row galeria_arte" id="galeriaArt">
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
-        <img src="/imagenes/gallery/micapink.webp"
-         class="w-100 shadow-1-strong rounded mb-4 zoom" alt="Micaela kastan hoodie the next party pink" />
+        <img src="/imagenes/gallery/micapink.webp" class="w-100 shadow-1-strong rounded mb-4 zoom"
+          alt="Micaela kastan hoodie the next party pink" />
         <img src="/imagenes/gallery/greetingsfromhellmerch.webp"
-          class="w-100 shadow-1-strong rounded mb-4 border border-dark zoom" alt="custom denim">  
+          class="w-100 shadow-1-strong rounded mb-4 border border-dark zoom" alt="custom denim">
         <img src="/imagenes/gallery/greetingsfromhellpinkled.webp"
-        class="w-100 shadow-1-strong rounded mb-4 border border-dark zoom" alt="hoddie pink custom denim" />
+          class="w-100 shadow-1-strong rounded mb-4 border border-dark zoom" alt="hoddie pink custom denim" />
 
       </div>
       <div class="col-lg-4 mb-4 mb-lg-0">
         <img src="/imagenes/gallery/greetingsfromhellmarinocig.webp"
           class="w-100 shadow-1-strong rounded mb-4 border border-dark zoom" alt="marino reme tiger king" />
-        <img src="/imagenes/gallery/marinotmespalda.webp" class="w-100 shadow-1-strong rounded mb-4 border border-danger zoom"
-          alt="" />
-          <img src="/imagenes/gallery/greetingsfromhellmicapoison.webp"
+        <img src="/imagenes/gallery/marinotmespalda.webp"
+          class="w-100 shadow-1-strong rounded mb-4 border border-danger zoom" alt="" />
+        <img src="/imagenes/gallery/greetingsfromhellmicapoison.webp"
           class="w-100 shadow-1-strong rounded mb-4 border border-danger zoom" alt="mica kastan reme poison" />
-          <img src="/imagenes/gallery/mercha.webp"
-          class="w-100 shadow-1-strong rounded mb-4 border border-danger zoom" alt="PINK HODD" />
+        <img src="/imagenes/gallery/mercha.webp" class="w-100 shadow-1-strong rounded mb-4 border border-danger zoom"
+          alt="PINK HODD" />
       </div>
       <div class="col-lg-4 mb-4 mb-lg-0">
         <img src="/imagenes/gallery/greetingsfromhellrelax.webp"
@@ -104,7 +119,7 @@
             class="w-100 shadow-1-strong rounded mb-4 border border-dark zoom" alt="Micaela Kastan custom denim" />
           <img src="/imagenes/gallery/nextparty.webp"
             class="w-100 shadow-1-strong rounded mb-4 border border-danger zoom" alt="reme the nextparty" />
-            <img src="/imagenes/gallery/cajaepuno.webp"
+          <img src="/imagenes/gallery/cajaepuno.webp"
             class="w-100 shadow-1-strong rounded mb-4 border border-danger zoom" alt="merch" />
 
         </div>
@@ -124,41 +139,44 @@
             class="w-100 shadow-1-strong rounded mb-4 border border-dark zoom" alt="JERITTTT" />
           <img src="/imagenes/gallery/pinkfrente.webp"
             class="w-100 shadow-1-strong rounded mb-4 border border-danger zoom" alt="PINK HODD" />
-            <img src="/imagenes/gallery/catuycan.webp"
-            class="w-100 shadow-1-strong rounded mb-4 border border-danger zoom" alt="customDenim Closet" /> 
+          <img src="/imagenes/gallery/catuycan.webp"
+            class="w-100 shadow-1-strong rounded mb-4 border border-danger zoom" alt="customDenim Closet" />
         </div>
         <!-- Pie de pagina / footer -->
-        <footer class="footerFinal container raw">
-          <div class="mapaRedes container">
-            <div class="row">
-              <map name="caba"><iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.573383207134555!3d-34.615743688997895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1628798809262!5m2!1ses!2sar"
-                  width="400" height="200" style="border:transparent;" allowfullscreen="" loading="lazy"></iframe>
-              </map>
-              <p class="bienvenidosFooter">Bienvenidos a este proyecto, donde intentamos reinventar el mundo de la moda desde nuestro
-                pensamiento;
-                basado en la cultura del arte, el tatuaje,el detalle dentro de lo simple, lo hecho a mano. Creemos
-                en el
-                poder de vestirse de forma autentica y por eso le ponemos todo nuestro amor a esta compañia
-              </p>
-              <a href="/index.html"> <img src="/imagenes/logoboca.jpg" class="logoBoca" alt="logotipo boca" width="90%"></a>
-              <div class="btn-group-vertical redes ">
-                <a class="btn btn-primary" href="/index.html" role="button">HOME</a>
-                <a class="btn btn-primary" href="https://www.instagram.com/teaseme.company/" target=”_blank”  role="button">@TEASEMECOMPANY <i
-                    class="fab fa-instagram"></i></a>
-                <a class="btn btn-primary" href="https://web.whatsapp.com/"  target=”_blank” role="button">WHATS APP? <i
-                    class="fab fa-whatsapp"></i></a>
-                <a class="btn btn-primary" href="/paginas/cart.html" role="button">GO CART <i class="fab fa-shopping-cart"></i></a>
-                <a class="btn btn-primary" href="/paginas/contact.html" role="button">CONTACTO <i class="fab fa-paper-plane"></i></a>
+        <footer>
+          <div class="container aling-items-center justify-content-center foot__move">
+            <div class=" container ">
+              <div class="row btn-group-vertical botones__redes botones__footer__uno btn-primary">
+
+                <a href="/index.html"> <img src="/imagenes/logobocatm.png" class="logotipo_boca" alt="logotipo boca"
+                    width="25%"> </a>
+                <a class="btn btn-primary botones__footer__uno" href="/index.html" role="button">HOME</a>
+                <a class="btn btn-primary botones__footer__dos" href="https://www.instagram.com/teaseme.company/"
+                  target=”_blank” role="button">@TEASEMECOMPANY
+                  <i class="fab fa-instagram"></i></a>
+                <a class="btn btn-primary botones__footer__tres" href="https://web.whatsapp.com/" target=”_blank”
+                  role="button">WHATS APP? <i class="fab fa-whatsapp"></i></a>
+                <a class="btn btn-primary botones__footer__cuatro" href="/paginas/cart.html" role="button">GO CART <i
+                    class="fab fa-shopping-cart"></i></a>
+                <a class="btn btn-primary botones__footer__cinco" href="/paginas/contact.html" role="button">CONTACTO <i
+                    class="fab fa-paper-plane"></i></a>
               </div>
             </div>
-         </div>
-  </footer>
-       <small>Todos los derechos reservados por TEASE ME COMPANY</small>
+            <a href="/paginas/closet.html"><i class="fas fa-gift envios__foot" role="button">Envios personalizados a
+                todo el pais</i></a>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
-      </script>
+          </div>
+        </footer>
+        <small>Todos los derechos reservados por TEASE ME COMPANY</small>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+
 </body>
 
 </html>

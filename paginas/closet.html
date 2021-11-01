@@ -8,6 +8,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/imagenes/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/imagenes/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/imagenes/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link rel="manifest" href="/imagenes/favicon/site.webmanifest">
   <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="http://teasemecompany.online/" />
@@ -21,250 +23,255 @@
     content="closet, arma tu pedido, moda, street, tattoo, handmade, diseños personalizados, custom denim, ropa, urban, camperas, diseños unicos,ropa pintada a mano, hoodies, arte, remeras, pintado a mano, camperas, urban streetwear">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="https://kit.fontawesome.com/dede80f460.js" crossorigin="anonymous"></script>
-  <title>CLOSET - TEASE ME COMPANY</title>
+
   <script src="/js/compras.js"></script>
+  <script src="https://kit.fontawesome.com/dede80f460.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <title>CLOSET - TEASE ME COMPANY</title>
 
 </head>
 
-<body>
-  <!-- header -->
-  <header class="headerInicial header__closet">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark menuNav container-fluid menuCelu">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body style="overflow-x:hidden; overflow-y:scroll" class="container-fluid body__index">
+  <div class="wrapper">
+    <header class="headerInicial header__index">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark menuNav navbar-expand-sm container-fluid menuCelu">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../TEASEMECOMPANY/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/closet.html">Closet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/artgalery.html">Art gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/oursizes.html">Our sizes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/cart.html">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="marquee__cont texto__welcome marquee-desktop marquee__cont marquee__cont2 marquee-mobile">
+        <div class="marquee-parent ">
+          <div class="marquee texto__welcome marquee--long" width="100vw" style="--tw: 175ch;   --ad: 12s;">
+            <span><b> -CLOSET-NUESTROS DISEÑOS-</b>PRENDAS / DESLIZÁ HACIA ABAJO PARA VER LO NUEVO<b> - CLOSET /TEASE ME
+                CREW- </b><b>-CLOSET - </b>PRENDAS /LOVE YOU <b> - PRODUCTOS /HANDMADE- </b> / GRACIAS POR
+              VISITARNOS</span>
+          </div>
+        </div>
+        <img src="/imagenes/logobocatm.png" alt="logotipo boca" width="60%" class="logo__boca">
+      </div>
+
+      <div class="selectCloset container">
+        <div class="row">
+          <button type="button" class="btn btsuno btn-primary btn-lg">REMERAS <a href="#anclareme"></a> </button>
+          <button type="button" class="btn btsdos btn-secondary btn-lg">HOODIES <a href="#anclahood"></a></button>
+          <button type="button" class="btn btstres btn-primary btn-lg">CUSTOM DENIM <a href="#anclacd"></a></button>
+        </div>
+      </div>
+      <!-- carrusel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/imagenes/remerauno.webp" class="d-block w-100" alt="remera modelo escorpion">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/remerados.webp" class="d-block w-100" alt="remera modelo thecrew">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../paginas/closet.html">Closet</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/paginas/artgalery.html">Art gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/paginas/oursizes.html">Our sizes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/paginas/contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/paginas/cart.html">Cart</a>
-            </li>
-          </ul>
-        </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </nav>
-  </header>
 
-  <div class="selectCloset container">
-    <div class="row">
-      <button type="button" class="btn btn-primary btn-lg">REMERAS <a href="#anclareme"></a> </button>
-      <button type="button" class="btn btn-secondary btn-lg">HOODIES <a href="#anclahood"></a></button>
-      <button type="button" class="btn btn-primary btn-lg">CUSTOM DENIM <a href="#anclacd"></a></button>
-    </div>
-  </div>
-  <!-- carrusel -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/imagenes/remerauno.webp" class="d-block w-100" alt="remera modelo escorpion">
-      </div>
-      <div class="carousel-item">
-        <img src="/imagenes/remerafrente.webp" class="d-block w-100" alt="remera eyes ">
-      </div>
-      <div class="carousel-item">
-        <img src="/imagenes/remerados.webp" class="d-block w-100" alt="remera modelo thecrew">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+      <!-- remeras -->
+      <div class="remerasCloset container">
+        <div class="row">
 
-  <!-- remeras -->
-  <div class="remerasCloset container">
-    <div class="row">
-      <a name="anclareme" id="anclareme"></a>
+          <a name="anclareme" id="anclareme"></a>
+          <h2 class="remerasHdos animate__arte" id="anclareme">-REMERAS-</h2>
+          <div class="card-group">
 
-      <h2 class="remerasHdos">-REMERAS-</h2>
+            <div class="card simpleCart_shelfItem product">
+                <img src="/imagenes/gallery/marinotiger.webp" class="card-img-top" alt="modelo marino">
+                <div class="card-body">
+                  <h5 class="card-title item_name">REME "THE CREW"</h5>
+                  <p class="card-text">Representando el amor por nuestra gente, el amor por la street y por nuestra crew
+                  </p>
+                  <br> <span class="item_price">$2500</span>
+                  <a href="javascript:;" class="item_add">Add to Cart</a> <br><br>
+                  <p class="card-text"><small class="text-muted">EP:1 MARINO</small></p>
+                </div>
+            </div>
 
-      <div class="card-group">
-        <div class="card">
-          <img src="/imagenes/gallery/marinotiger.webp" class="card-img-top" alt="modelo marino">
-          <div class="card-body">
-            <h5 class="card-title">REME "THE CREW"</h5>
-            <p class="card-text">Representando el amor por nuestra gente, el amor por la street y por nuestra crew</p>
-            <a href="#" onclick="addToCart(this);">
-              <span class="price">2500.00</span>$<br />
-              Añadir al carrito
-            </a>
-            <p class="card-text"><small class="text-muted">EP:1 MARINO</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/imagenes/gallery/valebody.webp" class="card-img-top" alt="remera body">
-          <div class="card-body">
-            <h5 class="card-title">REME "BODY"</h5>
-            <p class="card-text">MI CUERPO, MIS REGLAS.</p>
-            <a href="#" onclick="addToCart(this);">
-              <span class="price">2500.00</span>$<br />
-              Añadir al carrito
-            </a>
-            <p class="card-text"><small class="text-muted">EP:1 VALERIA</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/imagenes/gallery/marinoeyes.webp" class="card-img-top" alt="remera eyes">
-          <div class="card-body">
-            <h5 class="card-title">REME "THE EYES"</h5>
-            <p class="card-text">Miradas que transmiten sin hablar.</p>
-            <a href="#" onclick="addToCart(this);">
-              <span class="price">2500.00</span>$<br />
-              Añadir al carrito
-            </a>
-            <p class="card-text"><small class="text-muted">EP:1 MARINO</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- hoodies -->
-  <div class="hoodiesCloset container">
-    <div class="row">
-      <a name="anclahood" id="anclahood"></a>
-      <h2 class="remerasHdos">-HOODIES-</h2>
-      <div class="card-group">
-        <div class="card">
-          <img src="/imagenes/gallery/micapink.webp" class="card-img-top" alt="modelo mica kastan">
-          <div class="card-body">
-            <h5 class="card-title">HOODIE "THE NEXT PARY" PINK</h5>
-            <p class="card-text">Cuando nos ponemos nuestros hoodies pasan cosas.</p>
-            <a href="#" onclick="addToCart(this);">
-              <span class="price">4000.00</span>$<br />
-              Añadir al carrito
-            </a>
-            <p class="card-text"><small class="text-muted">EP:1 MICA KASTAN</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/imagenes/gallery/jerohoddcables.webp" class="card-img-top" alt="hoodie the crew">
-          <div class="card-body">
-            <h5 class="card-title">HOODIE "THE CREW"</h5>
-            <p class="card-text">Representando el amor por nuestra gente, el amor por la street y por nuestra crew.</p>
-            <a href="#" onclick="addToCart(this);">
-              <span class="price">4000.00</span>$<br />
-              Añadir al carrito
-            </a>
-            <p class="card-text"><small class="text-muted">EP:1 JERITTTT</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- custom denim -->
-  <div class="customDenimCloset container">
-    <div class="row">
-      <a name="anclacd" id="#anclacd"></a>
-      <h2 class="remerasHdos">-CUSTOM DENIM-</h2>
-      <div class="card-group">
-        <div class="card">
-          <img src="/imagenes/gallery/greetingsfromhellswettespalda.webp" class="card-img-top" alt="modelo valeria">
-          <div class="card-body">
-            <h5 class="card-title">CAMPERA PINTADA A MANO "SWEET"</h5>
-            <p class="card-text">COMPLETAMENTE EXCLUSIVA</p>
-            <a href="#" onclick="addToCart(this);">
-              <span class="price">8500.00</span>$<br />
-              Añadir al carrito
-            </a>
-            <p class="card-text"><small class="text-muted">EP:1 VALERIA</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/imagenes/gallery/greetingsfromhellburnespalda.webp" class="card-img-top" alt="modelo mica kastan">
-          <div class="card-body">
-            <h5 class="card-title">CAMPERA PINTADA A MANO "WATCH IT BURN"</h5>
-            <p class="card-text">COMPLETAMENTE EXCLUSIVA</p>
-            <a href="#" onclick="addToCart(this);">
-              <span class="price">8500.00</span>$<br />
-              Añadir al carrito
-            </a>
-            <p class="card-text"><small class="text-muted">EP:1 MICA KASTAN</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/imagenes/gallery/greetingsfromhelllogoespalda.webp" class="card-img-top" alt="modelo catu">
-          <div class="card-body">
-            <h5 class="card-title">CAMPERA PINTADA A MANO "TEASE ME BABY"</h5>
-            <p class="card-text">COMPLETAMENTE EXCLUSIVA</p>
-            <a href="#" onclick="addToCart(this);">
-              <span class="price">8500.00</span>$<br />
-              Añadir al carrito
-            </a>
-            <p class="card-text"><small class="text-muted">EP:1 CATALINA DALBAGNI</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-        <!-- Pie de pagina / footer -->
-        <footer class="footerFinal container raw">
-          <div class="mapaRedes container">
-            <div class="row">
-              <map name="caba"><iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.573383207134555!3d-34.615743688997895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1628798809262!5m2!1ses!2sar"
-                  width="400" height="200" style="border:transparent;" allowfullscreen="" loading="lazy"></iframe>
-              </map>
-              <p class="bienvenidosFooter">Bienvenidos a este proyecto, donde intentamos reinventar el mundo de la moda
-                desde
-                nuestro
-                pensamiento;
-                basado en la cultura del arte, el tatuaje,el detalle dentro de lo simple, lo hecho a mano. Creemos
-                en el
-                poder de vestirse de forma autentica y por eso le ponemos todo nuestro amor a esta compañia
-              </p>
-              <a href="/index.html"> <img src="/imagenes/logoboca.jpg" class="logoBoca" alt="logotipo boca"
-                  width="90%"></a>
-              <div class="btn-group-vertical redes ">
-                <a class="btn btn-primary" href="/index.html" role="button">HOME</a>
-                <a class="btn btn-primary" href="https://www.instagram.com/teaseme.company/" target=”_blank”
-                  role="button">@TEASEMECOMPANY <i class="fab fa-instagram"></i></a>
-                <a class="btn btn-primary" href="https://web.whatsapp.com/" target=”_blank” role="button">WHATS APP? <i
-                    class="fab fa-whatsapp"></i></a>
-                <a class="btn btn-primary" href="/paginas/cart.html" role="button">GO CART <i
-                    class="fab fa-shopping-cart"></i></a>
-                <a class="btn btn-primary" href="/paginas/contact.html" role="button">CONTACTO <i
-                    class="fab fa-paper-plane"></i></a>
-              </div>
+            <div class="card simpleCart_shelfItem product">
+                <img src="/imagenes/gallery/valebody.webp" class="card-img-top" alt="remera body">
+                <div class="card-body">
+                  <h5 class="card-title">REME "BODY"</h5>
+                  <p class="card-text">MI CUERPO, MIS REGLAS.</p>
+                  <br> <span class="item_price">$2500</span>
+                  <a href="javascript:;" class="item_add">Add to Cart</a> <br><br>
+                  <p class="card-text"><small class="text-muted">EP:1 VALERIA</small></p>
+                </div>
+            </div>
+
+            <div class=" card simpleCart_shelfItem product">
+                <img src="/imagenes/gallery/marinoeyes.webp" class="card-img-top" alt="remera eyes">
+                <div class="card-body">
+                  <h5 class="card-title">REME "THE EYES"</h5>
+                  <p class="card-text">Miradas que transmiten sin hablar.</p>
+                  </p>
+                  <br> <span class="item_price">$2500</span>
+                  <a href="javascript:;" class="item_add">Add to Cart</a> <br><br>
+                  <p class="card-text"><small class="text-muted">EP:1 MARINO</small></p>
+                </div>
             </div>
           </div>
-        </footer>
-        <small>Todos los derechos reservados por TEASE ME COMPANY</small>
+        </div>
+      </div>
+      <!-- hoodies -->
+      <div class="hoodiesCloset container">
+        <div class="row">
+          <a name="anclahood" id="anclahood"></a>
+          <h2 class="remerasHdos animate__arte">-HOODIES-</h2>
+          <div class="card-group">
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
-        </script>
+            <div class="card simpleCart_shelfItem product">
+                <img src="/imagenes/gallery/micapink.webp" class="card-img-top" alt="modelo mica kastan">
+                <div class="card-body">
+                  <h5 class="card-title">HOODIE "THE NEXT PARY" PINK</h5>
+                  <p class="card-text">Cuando nos ponemos nuestros hoodies pasan cosas.</p>
+                  <br> <span class="item_price">$4000</span>
+                  <a href="javascript:;" class="item_add">Add to Cart</a> <br><br>
+                  <p class="card-text"><small class="text-muted">EP:1 MICA KASTAN</small></p>
+                </div>
+            </div>
+
+            <div class="card simpleCart_shelfItem product">
+                <img src="/imagenes/gallery/jerohoddcables.webp" class="card-img-top" alt="hoodie the crew">
+                <div class="card-body">
+                  <h5 class="card-title">HOODIE "THE CREW"</h5>
+                  <p class="card-text">Representando el amor por nuestra gente, el amor por la street y por nuestra
+                    crew.
+                    <br> <span class="item_price">$4000</span>
+                    <a href="javascript:;" class="item_add">Add to Cart</a> <br><br>
+                    <p class="card-text"><small class="text-muted">EP:1 JERITTTT</small></p>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- custom denim -->
+      <div class="customDenimCloset container">
+        <div class="row">
+          <a name="anclacd" id="#anclacd"></a>
+          <h2 class="remerasHdos animate__arte " id="anclacd">-CUSTOM DENIM-</h2>
+          <div class="card-group">
+
+            <div class="card simpleCart_shelfItem product">
+                <img src="/imagenes/gallery/greetingsfromhellswettespalda.webp" class="card-img-top"
+                  alt="modelo valeria">
+                <div class="card-body">
+                  <h5 class="card-title">CAMPERA PINTADA A MANO "SWEET"</h5>
+                  <p class="card-text">COMPLETAMENTE EXCLUSIVA</p><br> <span class="item_price">$8500</span>
+                  <a href="javascript:;" class="item_add">Add to Cart</a> <br><br>
+                  <p class="card-text"><small class="text-muted">EP:1 VALERIA</small></p>
+                </div>
+            </div>
+
+            <div class="card simpleCart_shelfItem product">
+                <img src="/imagenes/gallery/greetingsfromhellburnespalda.webp" class="card-img-top"
+                  alt="modelo mica kastan">
+                <div class="card-body">
+                  <h5 class="card-title">CAMPERA PINTADA A MANO "WATCH IT BURN"</h5>
+                  <p class="card-text">COMPLETAMENTE EXCLUSIVA</p><br> <span class="item_price">$8500</span>
+                  <a href="javascript:;" class="item_add">Add to Cart</a> <br><br>
+                  <p class="card-text"><small class="text-muted">EP:1 MICA KASTAN</small></p>
+                </div>
+            </div>
+
+            <div class="card simpleCart_shelfItem product">
+                <img src="/imagenes/gallery/greetingsfromhelllogoespalda.webp" class="card-img-top" alt="modelo catu">
+                <div class="card-body">
+                  <h5 class="card-title">CAMPERA PINTADA A MANO "TEASE ME BABY"</h5>
+                  <p class="card-text">COMPLETAMENTE EXCLUSIVA</p><br> <span class="item_price">$8500</span>
+                  <a href="javascript:;" class="item_add">Add
+                    to Cart</a> <br><br>
+                  <p class="card-text"><small class="text-muted">EP:1 CATALINA DALBAGNI</small></p>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Pie de pagina / footer -->
+      <footer>
+        <div class="container aling-items-center justify-content-center foot__move">
+          <div class=" container ">
+            <div class="row btn-group-vertical botones__redes botones__footer__uno btn-primary">
+
+              <a href="/index.html"> <img src="/imagenes/logobocatm.png" class="logotipo_boca" alt="logotipo boca"
+                  width="25%"> </a>
+              <a class="btn btn-primary botones__footer__uno" href="/index.html" role="button">HOME</a>
+              <a class="btn btn-primary botones__footer__dos" href="https://www.instagram.com/teaseme.company/"
+                target=”_blank” role="button">@TEASEMECOMPANY
+                <i class="fab fa-instagram"></i></a>
+              <a class="btn btn-primary botones__footer__tres" href="https://web.whatsapp.com/" target=”_blank”
+                role="button">WHATS APP? <i class="fab fa-whatsapp"></i></a>
+              <a class="btn btn-primary botones__footer__cuatro" href="/paginas/cart.html" role="button">GO
+                CART <i class="fab fa-shopping-cart"></i></a>
+              <a class="btn btn-primary botones__footer__cinco" href="/paginas/contact.html" role="button">CONTACTO <i
+                  class="fab fa-paper-plane"></i></a>
+            </div>
+          </div>
+          <a href="/paginas/closet.html"><i class="fas envio__closet fa-gift envios__foot" role="button">Envios
+              personalizados a todo
+              el pais</i></a>
+
+        </div>
+      </footer>
+      <small class="small_closet">Todos los derechos reservados por TEASE ME COMPANY</small>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+      </script>
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+       <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.0/js/bootstrap.min.js"></script>
+      <script src="compras.js"></script>
+      <script src="script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

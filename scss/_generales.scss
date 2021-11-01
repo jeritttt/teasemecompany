@@ -13,14 +13,15 @@ body {
     grid-area: header;
 }
 
-.logo__boca {   
-    
+.logo__boca {
+ 
     &:hover {
-    transition: 1.5s;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+        transition: 1.5s;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
+
 .header__index {
     background-position: center center;
     background-size: contain;
@@ -125,31 +126,69 @@ footer {
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    font-size: 220%;
+    font-size: 100%;
     max-width: 100%;
     padding: 5%;
     margin: 5%;
-    height: 90%;
     line-height: 1.2;
-    
+
 
 }
+
 .btn-group-vertical {
     background-color: #b31f24;
-    color: black ;
-    
+    color: black;
+
+}
+.btn-secondary {
+    color: black;
+    background-color: #b31f24;
+    border-radius: 25px;
+    outline: 0;
 }
 .btn-primary {
     color: black;
     background-color: #b31f24;
-    border-radius: 30px;
-    outline: 0; }
+    border-radius: 25px;
+    outline: 0;
+}
+.btsuno {
+    background-color: #919191bf;  
+
+}
+.btsdos {
+    color: black;
+    background-color: #e9e9e9b3;  
+}.btstres {
+    color: black;
+    background-color: #393939c4;  
+}
+.btsdos:hover {
+    background: rgb(223, 59, 149);
+    border-color: rgb(255, 255, 255);
+}
+.btsuno:hover {
+    background: rgb(252, 190, 224);
+    border-color: rgb(255, 255, 255);
+}
+.btstres:hover {
+    background: rgba(255, 8, 144, 0.842);
+    border-color: rgb(255, 255, 255);
+}
 .bienvenidos__footer {
     text-align: center;
 }
-.btn:focus, a, btn-group-vertical, select:focus, textarea, select, .btn-primary, input.form-control:focus {
 
-    outline:none !important;
+.btn:focus,
+a,
+btn-group-vertical,
+select:focus,
+textarea,
+select,
+.btn-primary,
+input.form-control:focus {
+
+    outline: none !important;
 
     outline-width: 0 !important;
 
@@ -162,11 +201,12 @@ footer {
     border-color: hotpink;
 
 
-    outline: 0 none;    
+    outline: 0 none;
 }
+
 .sobre__nosotros {
     font-size: 100%;
-    
+
 }
 
 .logoBoca {
@@ -182,8 +222,8 @@ footer {
 }
 
 small {
-    font-size: 90%;
-
+    color:white;
+text-align: center;
 }
 
 .texto-encima {
@@ -214,4 +254,8 @@ small {
 
 .carroDeCompras ul li {
     font-size: 900%;
+}
+.tabla__dos {
+    position: center;
+    align-items: center;
 }

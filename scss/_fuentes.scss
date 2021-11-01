@@ -62,6 +62,13 @@ opacity: 100%;
     position: absolute;
     left: 50%;
 }
+.animate__con {
+  text-align: center;
+  color: hotpink;
+  text-shadow: #fffc4d 0 0 10px, #b31f24, 5px 5px 5px;
+  filter: glow(color=hotpink, strength=3);
+  line-height: 2;
+}
 .content {
     position: absolute;
  
@@ -95,7 +102,7 @@ opacity: 100%;
         top: 0;
         
         color: #b61e23;
-        font-size: 42px;
+        font-size: 35px;
         line-height: 40px;
         
         -webkit-animation-name: opacity;
@@ -217,26 +224,195 @@ opacity: 100%;
 
 
  }
- .envios__ship {
+ .envios__foot {
   width: 100px;
-      border-radius: 50%;
+      border-radius:30%;
       width: 50%;
       transition:.4s;
     }
-
-    &:hover {
-      background: #DDD;
-    }
 .fa-gift {
-  width: 32rem;
-  color: gray;
-  opacity: 50%;
+  width: 50%;
+  color: #fffef7;
+  opacity: 0.5;
+  font-size: 100%;
+
 }
 .envios__foot{
 text-decoration: none;
 background-color: transparent;
+font-size: 100%;
 }
 .small {
-  font-size: 140% ;
- color: gray;
+  font-size: 90% ;
+ color: white;
 }
+.price {
+  font-size: 150%;
+}
+.card-title {
+  font-size: 150%;
+}
+.card-text {
+  font-size: 100%;
+}
+.marquee span {   
+  display: inline-block;
+  white-space: nowrap;
+  color: hotpink;
+  width: var(--tw);
+  text-shadow: var(--tw) 0 currentColor, 
+               calc(var(--tw) * 2) 0 currentColor, 
+               calc(var(--tw) * 3) 0 currentColor,
+               calc(var(--tw) * 4) 0 currentColor;
+ 
+  will-change: transform;
+  animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+.marquee span {
+  animation: none;
+  text-shadow: none;
+  width: auto;
+  display: block;
+  line-height: 1.5;
+  text-align: center;
+  white-space: normal;
+}
+}
+
+@media (max-width: 799px) {
+ .marquee--long { 
+   font-size: 1rem;
+   padding-left: 1rem; 
+ }
+
+ .marquee span {
+   animation: marquee 15s linear infinite;
+ }
+}
+
+@media (max-width: 799px) {
+ .marquee-desktop {
+   display: none;
+ }
+
+ .marquee-mobile {
+   display: inline-block;
+ }
+
+ .marquee__cont2{
+   position: absolute;
+   width: 100%;
+   left: 0;
+   margin-top: 3rem;
+   overflow: hidden;
+}
+
+.marquee-parent {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+   height: 2rem;
+ }
+ .marquee-child {
+   transform: translateX(-100%);
+   display: block;
+   width: max-content;
+   height: fit-content;
+   animation: marquee2 15s linear infinite;
+   white-space: nowrap;
+ }
+
+ .marquee-child span {
+     margin: 0;
+     padding: 0;
+     text-shadow: var(--tw) 0 currentColor, 
+               calc(var(--tw) * 2) 0 currentColor, 
+               calc(var(--tw) * 3) 0 currentColor,
+               calc(var(--tw) * 4) 0 currentColor;
+ 
+  will-change: transform;
+ }
+
+ @keyframes marquee2 {
+   0% { transform: translateX(-100%); }
+   100% { transform: translateX(100%); }
+ }
+}
+.texto__welcome {
+position: fixed;
+position: static;
+}
+
+.item_price,
+.simpleCart_empty {
+  text-decoration: none !important;
+  padding: 2px 5px 2px 5px;
+  background: #FD8989;
+  color: white;
+  border: 1px solid #FC7070;
+}
+.product-total {
+  display: block;
+  background: white;
+  padding: 5px;
+  border: 1px solid whiteSmoke;
+  box-shadow: 0 1px 2px #BEBEBE;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.product-Info {
+  display: block;
+  background: white;
+  width:110px;
+  padding: 5px 0 5px 15px;
+  border: 1px solid #E9E9E9;
+  box-shadow: 0 1px 2px #B4B4B4;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #919191;
+  clear:both;
+}
+/* Table */
+.headerRow th {
+  width: 100%;
+  background: #5AA6E2;
+  color: white;
+}
+.itemRow td {
+  background:#F3F3F3;
+  width: 100%;
+  padding: 10px;
+}
+
+.item-increment a {
+  background: #87CAFF;
+  padding: 0 3px 0 3px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #72B9F1;
+}
+.item-decrement a {
+  background: #FD9999;
+  padding: 0 5px 0 5px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #F17272;
+}
+.item-remove a{
+  background: white;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #D5D5D5;
+}
+
+

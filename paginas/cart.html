@@ -8,6 +8,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/imagenes/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/imagenes/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/imagenes/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link rel="manifest" href="/imagenes/favicon/site.webmanifest">
   <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="http://teasemecompany.online/" />
@@ -25,42 +27,121 @@
   <script src="https://kit.fontawesome.com/dede80f460.js" crossorigin="anonymous"></script>
   <script src="/js/compras.js"></script>
   <title>CART - TEASE ME COMPANY</title>
+  <style>
+    .goods_list ul {
+      width: 1000px;
+      margin: 0 auto;
+      margin-top: 100px;
+    }
 
+    .goods_list ul li {
+      float: left;
+      width: 240px;
+      list-style: none;
+
+    }
+
+    .goods_list ul li img {
+      margin-left: 20px;
+    }
+
+    .goods_list ul li p {
+      text-align: center;
+    }
+
+    .goods_list ul li p a {
+      display: inline-block;
+      width: 80px;
+      height: 30px;
+      background: red;
+      color: #fff;
+      line-height: 30px;
+      font-size: 12px;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <style>
+    .shopingCar {
+      width: 350px;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: -310px;
+      background: green;
+    }
+
+    .kuangk {
+      width: 40px;
+      height: 100%;
+      background: #000;
+      position: relative;
+      float: left;
+    }
+
+    .kuangk a {
+      color: #FFFFFF;
+      font-size: 12px;
+      width: 12px;
+      position: absolute;
+      display: block;
+      background: red;
+      top: 50%;
+      left: 0;
+      padding: 10px 14px;
+      margin-top: -42px;
+      cursor: pointer;
+    }
+  </style>
+  <script src="js/jquery.js"></script>
+  <script src="js/tz_fly.js"></script>
 </head>
 
-<body>
-
-  <header class="headerInicial header__cart">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark menuNav container-fluid menuCelu">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/paginas/closet.html">Closet</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/paginas/artgalery.html">Art gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/paginas/oursizes.html">Our sizes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/paginas/contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../paginas/cart.html">Cart</a>
-            </li>
-          </ul>
+<body style="overflow-x:hidden; overflow-y:scroll" class="container-fluid body__index">
+  <div class="wrapper">
+    <header class="headerInicial header__index">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark menuNav navbar-expand-sm container-fluid menuCelu">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../TEASEMECOMPANY/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/closet.html">Closet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/artgalery.html">Art gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/oursizes.html">Our sizes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/cart.html">Cart</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <div class="marquee__cont texto__welcome marquee-desktop marquee__cont marquee__cont2 marquee-mobile">
+        <div class="marquee-parent ">
+          <div class="marquee texto__welcome marquee--long" width="100vw" style="--tw: 175ch;   --ad: 12s;">
+            <span><b> -CARRITO - CART - CARRO DE COMPRAS -</b>LOVE U / DESLIZÁ HACIA ABAJO PARA FINALIZAR TU COMPRA<b>
+                -/TEASE ME CREW- </b><b>-CART-</b> /CONTINUAR COMPRANDO<b> - /HANDMADE- </b> / GRACIAS POR VISITARNOS
+            </span>
+          </div>
+        </div>
+        <img src="/imagenes/logobocatm.png" alt="logotipo boca" width="60%" class="logo__boca">
       </div>
-    </nav>
+  </div>
   </header>
 
 
@@ -68,95 +149,126 @@
 
 
   <section class="carro__compras">
-    <h1>CARRO DE COMPRAS</h1>
-    <h2>ELEGI LO QUE QUERES RECIBIR!</h2>
-    <ul>
-      <li>Remeras</li>
-      <li>Hoodies</li>
-      <li>Camperas</li>
-      <li>Camisas</li>
-      <li>Gorras</li>
-      <li>Custom denim</li>
-      <li>Accesorios</li>
-    </ul>
-   
-        <h1>GO CART;</h1>
-        <table id="mytable" width="1200" align="center">
-          <tr>
-            <th><input type="checkbox" id="allCheck" onclick="selectAll()" />seleccionar todo</th>
-            <th>TEASEMEPLEASE</th>
-            <th>Puntos acumulados con esta compra</th>
-            <th>Precio unitario (peso$)</th>
-            <th>Cantidad</th>
-            <th>Subtotal (peso$)</th>
-            <th>Editar</th>
-          </tr>
-          <tr>
-            <td><input type="checkbox" class="selectOne" /></td>
-            <td class="imgbackground"><img src="/imagenes/tigre.jpg" width="40%" /></td>
-            <td class="integral">247</td>
-            <td>3500.00</td>
-            <td>
-              <button onclick="reduce(this)">-</button>
-              <input type="text" size="1" readonly="true" value="1" />
-              <button onclick="plus(this)">+</button>
-            </td>
-            <td class="shopCount">0</td>
-            <td><a href="#" class="delete" onclick="deleteChild(this)">Eliminar</a></td>
-          </tr>
+    <div>
+      <h1 class="animate__con">CARRO DE COMPRAS</h1>
 
-        </table>
-      </div>
-      <div id="info-input">
-        <div class="total-div">
-          <span>Precio total (sin envio):<span id="resultTotalMoney">0</span>pesos argentinos</span>
+    <h1 class="animate__arte">GO CART;</h1>
+
+    <div class="container"><div class="row">
+      <div class="span6">
+      
+        <!-- item -->
+        <ul class="products">
+           <li class="simpleCart_shelfItem product">
+            <p class="item_name animate__arte">CAMPERA PINTADA A MANO "WATCH IT BURN"</p>
+            <img src="/imagenes/gallery/greetingsfromhellburnespalda.webp" width="30%" alt="Item Alt">
+            <br> <span class="animate__arte item_price">$8500</span>
+            <a href="javascript:;" class="item_add animate__con">Add to Cart</a> <br><br>
+          </li>
+          <li class="simpleCart_shelfItem product">
+            <p class="item_name animate__arte">HOODIE "THE NEXT PARY" PINK</p>
+            <img  src="/imagenes/gallery/micapink.webp" width="30%" alt="Item Alt">
+            <br> <span class="animate__arte item_price">$4000</span>
+            <a href="javascript:;" class="item_add animate__con">Add to Cart</a> <br><br>
+          </li>
+          <li class="simpleCart_shelfItem product">
+            <p class="item_name animate__arte">REME "BODY"</p>
+            <img  src="/imagenes/gallery/valebody.webp" width="30%" alt="Item Alt">
+            <br> <span class="item_price animate__arte">$2500</span>
+            <a href="javascript:;" class="item_add animate__con">Add to Cart</a> <br><br>
+          </li>
+          <li class="simpleCart_shelfItem product">
+            <p class="item_name animate__arte">REME "THE EYES"</p>
+            <img  src="/imagenes/gallery/marinoeyes.webp" width="30%" alt="Item Alt">
+            <br> <span class="item_price animate__arte">$2500</span>
+            <a href="javascript:;" class="animate__con item_add">Add to Cart</a> <br><br>
+          </li>
+        </ul>
+    
+        <hr>
+        
+      </div><!-- /span6 -->
+      
+      
+      <div class="span6">
+      
+        <div class="product-Info">
+          <span class="simpleCart_quantity"></span> items 
+          <a href="#myModal" role="button" class="product-view" data-toggle="modal">View</a>
         </div>
-        <div class="btorinter-div">
-          <button onclick="selectDelete()" class="btdelete">Eliminar seleccionado</button>
-          <span class="viewIntegral">Puntos a ganar:<span id="integralTotal">0</span>puntos</span>
+           
+        <div id="myModal" class="modal hide fade">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3><span class="simpleCart_quantity"></span> items</h3>
+          </div>
+          <div class="modal-body">
+            <div class="simpleCart_items"></div>
+            <!-- Yep it's that simple -->
+            <hr>
+            <div class="left"><strong>Items: </strong><span class="simpleCart_quantity"></span></div>
+            <div class="right"><strong>Total: </strong><span class="simpleCart_total"></span></div>
+          </div>
+          <div class="modal-footer">
+            <a href="javascript:;" class="simpleCart_empty animate__arte">Empty</a>
+            <a href="javascript:;" class="simpleCart_checkout animate__arte">Checkout</a>
+          </div>
         </div>
-        <div>
-          <button class="btbuy" onclick="buyNow()">Ir a pagar</button>
+        
+        
+    
+        <div class="product-total">
+        
+          <p class="animate__con"><b>Items:</b> <span class="simpleCart_quantity"></span></p>
+          <!--number of items in the cart-->
+          
+          <p class="animate__con"><b>Total:</b> <span class="simpleCart_total"></span></p>
+          <!-- total cost of cart before tax & shipping-->
+        
         </div>
+      </div><!-- /span6 -->
+        
+      </div></div><!-- /container /row -->
+
+<!-- Pie de pagina / footer -->
+<footer>
+  <div class="container aling-items-center justify-content-center foot__move">
+    <div class=" container ">
+      <div class="row btn-group-vertical botones__redes botones__footer__uno btn-primary">
+
+        <a href="/index.html"> <img src="/imagenes/logobocatm.png" class="logotipo_boca" alt="logotipo boca"
+            width="25%"> </a>
+        <a class="btn btn-primary botones__footer__uno" href="/index.html" role="button">HOME</a>
+        <a class="btn btn-primary botones__footer__dos" href="https://www.instagram.com/teaseme.company/"
+          target=”_blank” role="button">@TEASEMECOMPANY
+          <i class="fab fa-instagram"></i></a>
+        <a class="btn btn-primary botones__footer__tres" href="https://web.whatsapp.com/" target=”_blank”
+          role="button">WHATS APP? <i class="fab fa-whatsapp"></i></a>
+        <a class="btn btn-primary botones__footer__cuatro" href="/paginas/cart.html" role="button">GO CART <i
+            class="fab fa-shopping-cart"></i></a>
+        <a class="btn btn-primary botones__footer__cinco" href="/paginas/contact.html" role="button">CONTACTO <i
+            class="fab fa-paper-plane"></i></a>
       </div>
     </div>
+    <a href="/paginas/closet.html"><i class="fas fa-gift envios__foot" role="button">Envios personalizados a todo el
+        pais</i></a>
 
-  </section>
-  <!-- Pie de pagina / footer -->
-  <footer class="footerFinal container raw">
-    <div class="mapaRedes container">
-      <div class="row">
-        <map name="caba"><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.573383207134555!3d-34.615743688997895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1628798809262!5m2!1ses!2sar"
-            width="400" height="200" style="border:transparent;" allowfullscreen="" loading="lazy"></iframe>
-        </map>
-        <p class="bienvenidosFooter">Bienvenidos a este proyecto, donde intentamos reinventar el mundo de la moda desde
-          nuestro
-          pensamiento;
-          basado en la cultura del arte, el tatuaje,el detalle dentro de lo simple, lo hecho a mano. Creemos
-          en el
-          poder de vestirse de forma autentica y por eso le ponemos todo nuestro amor a esta compañia
-        </p>
-        <a href="/index.html"> <img src="/imagenes/logoboca.jpg" class="logoBoca" alt="logotipo boca" width="90%"></a>
-        <div class="btn-group-vertical redes ">
-          <a class="btn btn-primary" href="/index.html" role="button">HOME</a>
-          <a class="btn btn-primary" href="https://www.instagram.com/teaseme.company/" target=”_blank”
-            role="button">@TEASEMECOMPANY <i class="fab fa-instagram"></i></a>
-          <a class="btn btn-primary" href="https://web.whatsapp.com/" target=”_blank” role="button">WHATS APP? <i
-              class="fab fa-whatsapp"></i></a>
-          <a class="btn btn-primary" href="/paginas/cart.html" role="button">GO CART <i
-              class="fab fa-shopping-cart"></i></a>
-          <a class="btn btn-primary" href="/paginas/contact.html" role="button">CONTACTO <i
-              class="fab fa-paper-plane"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <small>Todos los derechos reservados por TEASE ME COMPANY</small>
+  </div>
+</footer>
+<small>Todos los derechos reservados por TEASE ME COMPANY</small>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.0/js/bootstrap.min.js"></script>
+<script src="compras.js"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>

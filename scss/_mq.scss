@@ -32,7 +32,9 @@
          "welcome welcome"
          "footer  footer"
      }
-
+    .logotipo__boca {
+    margin-bottom: 5%;
+    }
     .videoHome {
         margin: 0;
         padding: 0;
@@ -57,5 +59,15 @@
     }
     .redes {
         font-size: 300%;
+    }
+    .content__container__list__item {
+        font-size: 70% ;
+        font-weight: 300;
+    }
+}
+@media (max-width: 700px){
+    .content__container__list__item {
+                 font-size: 30% ;
+                 font-weight: 100;
     }
 }

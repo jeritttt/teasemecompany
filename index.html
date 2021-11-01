@@ -24,17 +24,23 @@
     content="moda, street, tattoo, handmade, diseños personalizados, custom denim, ropa, urban, camperas, diseños unicos,ropa pintada a mano, hoodies, arte, remeras, pintado a mano, camperas, urban streetwear">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    html, body{
+    overflow:hidden;
+    overflow-x:hidden;overflow-y:scroll;
+    overflow:-moz-scrollbars-vertical;
+    }
+    </style>
   <script src="https://kit.fontawesome.com/dede80f460.js" crossorigin="anonymous"></script>
   <title>HOME - TEASE ME COMPANY</title>
 </head>
 
-<body class="container-fluid body__index">
+<body style="overflow-x:hidden; overflow-y:hidden" class="container-fluid body__index">
   <div class="wrapper">
     <header class="headerInicial header__index">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark menuNav container-fluid menuCelu">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark menuNav navbar-expand-sm container-fluid menuCelu">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,18 +69,30 @@
             </ul>
           </div>
         </div>
+
+
       </nav>
-      <img src="/imagenes/logobocatm.png" alt="logotipo boca" width="60%" class="logo__boca">
-    </header>
-    <section class="welcome">
-      <h1>WELCOME</h1>
-      <section class="contenidoMultimediaHome">
-        <h2 class="ep1">[Greetings from hell]</h2>
-        <div class="videoHome">
-          <video src="../imagenes/joined-video-fc65020dbc52465bbc3af9307578c6b3.MP4" controls autoplay loop></video>
-          <h4 data-aos="fade-up" id="subtitulosVideo">VESTÍ ARTE</h4>
-      </section>
-      <div class="content__container contiene__about content ">
+      <div class="marquee__cont texto__welcome marquee-desktop marquee__cont marquee__cont2 marquee-mobile">
+        <div class="marquee-parent ">
+          <div class="marquee texto__welcome marquee--long" style="--tw: 175ch;   --ad: 12s;">
+            <span><b> -WELCOME CAT- </b>WELCOME CAT / DESLIZÁ HACIA ABAJO PARA VER LO NUEVO <b>-WELCOME CAT / TEASE
+                ME CREW -</b>WELCOME CAT / LOVE YOU<b>-WELCOME CAT / HANDMADE WEB-</b> /GRACIAS POR VISITARNOS</span>
+          </div>
+        </div>
+        <img src="/imagenes/logobocatm.png" alt="logotipo boca" width="60%" class="logo__boca">
+      </div>
+  </div>
+  </header>
+  <section class="welcome">
+    <h1>WELCOME</h1>
+    <section class="contenidoMultimediaHome">
+      <h2 class="ep1">[Greetings from hell]</h2>
+      <div class="videoHome">
+        <video src="../imagenes/joined-video-fc65020dbc52465bbc3af9307578c6b3.MP4" controls autoplay loop></video>
+        <h4 data-aos="fade-up" id="subtitulosVideo">VESTÍ ARTE</h4>
+    </section>
+    <div class="container">
+      <div class="content__container contiene__about content">
         <p data-aos="fade-down" data-aos-delay="1090" class="content__container__text">
           About
         </p>
@@ -86,51 +104,53 @@
           <li class="content__container__list__item">TEASE ME !</li>
         </ul>
       </div>
-      <section class="sobre__nosotros article dos">
-        <div class="fondotexto">
-          <h1 id="aboutletras">----</h1>
-          <p class="texto__principal">Somos entusiastas de las prendas de vestir originales que no se consiguen en
-            cualquier lado, que salen de lo mainstream. Por eso, creamos Tease Me Company, una marca de ropa con una
-            propuesta diferente. Apostamos al diseño de autor, al stock limitado y a los procesos productivos
-            artesanales. Creemos que el estilo de vestirse debe ser un fiel reflejo de la esencia de cada individuo, y
-            por eso diseñamos modelos personalizados, a partir de los gustos y preferencias de cada cliente. </p><br>
-          <p class="animate__arte"> Apostá vos también por LO AUTÉNTICO.</p>
-        </div>
-      </section>
-    </section>
-    <footer>
-      <div class="container aling-items-center justify-content-center foot__move">
-        <div class=" container ">
-          <div class="row btn-group-vertical botones__redes botones__footer__uno btn-primary">
 
-            <a href="/index.html"> <img src="/imagenes/logobocatm.png" class="logotipo_boca" alt="logotipo boca"
-                width="25%"> </a>
-            <a class="btn btn-primary botones__footer__uno" href="/index.html" role="button">HOME</a>
-            <a class="btn btn-primary botones__footer__dos" href="https://www.instagram.com/teaseme.company/"
-              target=”_blank” role="button">@TEASEMECOMPANY
-              <i class="fab fa-instagram"></i></a>
-            <a class="btn btn-primary botones__footer__tres" href="https://web.whatsapp.com/" target=”_blank”
-              role="button">WHATS APP? <i class="fab fa-whatsapp"></i></a>
-            <a class="btn btn-primary botones__footer__cuatro" href="/paginas/cart.html" role="button">GO CART <i
-                class="fab fa-shopping-cart"></i></a>
-            <a class="btn btn-primary botones__footer__cinco" href="/paginas/contact.html" role="button">CONTACTO <i
-                class="fab fa-paper-plane"></i></a>
-          </div>
-        </div>
-        <a href="/paginas/closet.html"><i class="fas fa-gift envios__foot">Envios personalizados a todo el pais</i></a> 
-
+    </div>
+    <section class="sobre__nosotros article dos">
+      <div class="fondotexto">
+        <h1 id="aboutletras">----</h1>
+        <p class="texto__principal">Somos entusiastas de las prendas de vestir originales que no se consiguen en
+          cualquier lado, que salen de lo mainstream. Por eso, creamos Tease Me Company, una marca de ropa con una
+          propuesta diferente. Apostamos al diseño de autor, al stock limitado y a los procesos productivos
+          artesanales. Creemos que el estilo de vestirse debe ser un fiel reflejo de la esencia de cada individuo, y
+          por eso diseñamos modelos personalizados, a partir de los gustos y preferencias de cada cliente. </p><br>
+        <p class="animate__arte"> Apostá vos también por LO AUTÉNTICO.</p>
       </div>
-    </footer>
-    <small>Todos los derechos reservados por TEASE ME COMPANY</small>
+    </section>
+  </section>
+  <footer>
+    <div class="container aling-items-center justify-content-center foot__move">
+      <div class=" container ">
+        <div class="row btn-group-vertical botones__redes botones__footer__uno btn-primary">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+          <a href="/index.html"> <img src="/imagenes/logobocatm.png" class="logotipo_boca" alt="logotipo boca"
+              width="25%"> </a>
+          <a class="btn btn-primary botones__footer__uno" href="/index.html" role="button">HOME</a>
+          <a class="btn btn-primary botones__footer__dos" href="https://www.instagram.com/teaseme.company/"
+            target=”_blank” role="button">@TEASEMECOMPANY
+            <i class="fab fa-instagram"></i></a>
+          <a class="btn btn-primary botones__footer__tres" href="https://web.whatsapp.com/" target=”_blank”
+            role="button">WHATS APP? <i class="fab fa-whatsapp"></i></a>
+          <a class="btn btn-primary botones__footer__cuatro" href="/paginas/cart.html" role="button">GO CART <i
+              class="fab fa-shopping-cart"></i></a>
+          <a class="btn btn-primary botones__footer__cinco" href="/paginas/contact.html" role="button">CONTACTO <i
+              class="fab fa-paper-plane"></i></a>
+        </div>
+      </div>
+      <a href="/paginas/closet.html"><i class="fas fa-gift envios__foot" role="button">Envios personalizados a todo el
+          pais</i></a>
+
+    </div>
+  </footer>
+  <small>Todos los derechos reservados por TEASE ME COMPANY</small>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
